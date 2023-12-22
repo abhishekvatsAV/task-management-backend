@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node index.js",
-    "dev": "tsc-watch --onSuccess 'node ./index.js' --onFailure 'echo Beep! Compilation Failed'",
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc-watch --onSuccess 'node ./dist/index.js' --onFailure 'echo Beep! Compilation Failed'",
     "build": "tsc"
   },
   "keywords": [],
