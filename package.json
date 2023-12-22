@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "dev": "tsc-watch --onSuccess 'node ./dist/index.js' --onFailure 'echo Beep! Compilation Failed'",
-    "build": "tsc"
+    "build": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
