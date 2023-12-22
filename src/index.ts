@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const mongoUrl = process.env.MONGO_URL;
+console.log("🔥  file: index.ts:17  mongoUrl: ", mongoUrl);
 
 mongoose
   .connect(mongoUrl)
