@@ -28,10 +28,10 @@ mongoose
     console.log("🛑 error in connecting with db : ", err);
   });
 
-// app.get("/", (req, res, next): RequestHandler => {
-//   res.status(200).json({ message: "how u doin?" });
-//   return;
-// });
+app.get("/", (req, res, next): RequestHandler => {
+  res.status(200).json({ message: "how u doin?" });
+  return;
+});
 
 app.use("/user", userRoutes);
 app.use(checkAuth);
