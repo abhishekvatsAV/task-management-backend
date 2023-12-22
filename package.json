@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "tsc-watch --onSuccess 'node ./dist/index.js' --onFailure 'echo Beep! Compilation Failed'",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist"
+    "start": "tsc && node index.js",
+    "dev": "tsc-watch --onSuccess 'node ./index.js' --onFailure 'echo Beep! Compilation Failed'",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -24,8 +22,6 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.10.5",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^5.0.5",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.3.3"
   },
